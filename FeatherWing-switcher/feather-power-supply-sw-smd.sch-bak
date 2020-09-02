@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Feather Switcher"
-Date ""
+Date "2020-09-01"
 Rev "0.1"
 Comp ""
 Comment1 "Adafruit Feather compatible 5V switching power supply"
@@ -178,8 +178,8 @@ P 4330 2550
 F 0 "C2" H 4215 2615 50  0000 L CNN
 F 1 "10uF" H 4125 2475 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4330 2550 50  0001 C CNN
-F 3 "https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf" H 4330 2550 50  0001 C CNN
-F 4 "587-2396-1-ND" H 4330 2550 50  0001 C CNN "DigiKey_PN"
+F 3 "~" H 4330 2550 50  0001 C CNN
+F 4 "1276-3100-1-ND‎" H 4330 2550 50  0001 C CNN "DigiKey_PN"
 	1    4330 2550
 	1    0    0    -1  
 $EndComp
@@ -322,6 +322,7 @@ F 0 "L1" V 7200 2220 50  0000 R CNN
 F 1 "4.7uH" V 7080 2250 50  0000 R CNN
 F 2 "My libs:TDK-VLS4012HBX" H 7140 2170 50  0001 C CNN
 F 3 "~" H 7140 2170 50  0001 C CNN
+F 4 "SRN3012TA-4R7MCT-ND‎" V 7140 2170 50  0001 C CNN "DigiKey_PN"
 	1    7140 2170
 	0    -1   -1   0   
 $EndComp
