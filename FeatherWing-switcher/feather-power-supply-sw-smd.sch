@@ -91,9 +91,9 @@ F 3 "~" H 6325 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6325 3900
-Text Label 3220 3720 0    50   ~ 0
+Text Label 3220 3710 0    50   ~ 0
 BATT+
-Text GLabel 4540 3720 2    50   Input ~ 0
+Text GLabel 4540 3710 2    50   Input ~ 0
 A1
 Text GLabel 6590 4100 0    50   Input ~ 0
 A1
@@ -283,7 +283,7 @@ Wire Notes Line
 Wire Notes Line
 	5910 3400 5910 5290
 Wire Notes Line
-	4760 3415 4760 4275
+	4760 3405 4760 4265
 Wire Notes Line
 	8160 1580 8160 3280
 Wire Notes Line
@@ -450,118 +450,66 @@ Wire Wire Line
 Connection ~ 4490 2910
 Wire Wire Line
 	4490 2910 4645 2910
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5F4DCA7B
-P 5025 3665
-F 0 "H1" H 5125 3711 50  0000 L CNN
-F 1 "MountingHole" H 5125 3620 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 5025 3665 50  0001 C CNN
-F 3 "~" H 5025 3665 50  0001 C CNN
-	1    5025 3665
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5F4E3BF8
-P 5025 3845
-F 0 "H2" H 5125 3891 50  0000 L CNN
-F 1 "MountingHole" H 5125 3800 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 5025 3845 50  0001 C CNN
-F 3 "~" H 5025 3845 50  0001 C CNN
-	1    5025 3845
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 5F4E3ED4
-P 5025 4040
-F 0 "H3" H 5125 4086 50  0000 L CNN
-F 1 "MountingHole" H 5125 3995 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 5025 4040 50  0001 C CNN
-F 3 "~" H 5025 4040 50  0001 C CNN
-	1    5025 4040
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5F4E4234
-P 5025 4225
-F 0 "H4" H 5125 4271 50  0000 L CNN
-F 1 "MountingHole" H 5125 4180 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 5025 4225 50  0001 C CNN
-F 3 "~" H 5025 4225 50  0001 C CNN
-	1    5025 4225
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	4910 4475 5700 4475
-Wire Notes Line
-	5700 4475 5700 3410
-Wire Notes Line
-	5700 3410 4910 3410
-Wire Notes Line
-	4910 3410 4910 4475
-Text Notes 4905 3485 0    50   ~ 0
+Text Notes 4935 3475 0    50   ~ 0
 M2.5 mounting holes
 Wire Wire Line
-	3220 3720 3470 3720
+	3220 3710 3470 3710
 Wire Notes Line
-	3070 4275 4760 4275
+	3070 4265 4760 4265
 Wire Notes Line
-	3070 3415 4760 3415
+	3070 3405 4760 3405
 Wire Notes Line
-	3070 3415 3070 4280
+	3070 3405 3070 4270
 $Comp
 L Jumper:SolderJumper_2_Bridged JP1
 U 1 1 5F4E9F72
-P 3620 3720
-F 0 "JP1" H 3570 3810 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 3285 3630 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3620 3720 50  0001 C CNN
-F 3 "~" H 3620 3720 50  0001 C CNN
-	1    3620 3720
+P 3620 3710
+F 0 "JP1" H 3570 3800 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 3285 3620 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3620 3710 50  0001 C CNN
+F 3 "~" H 3620 3710 50  0001 C CNN
+	1    3620 3710
 	1    0    0    -1  
 $EndComp
-Text Notes 3090 3500 0    50   ~ 0
+Text Notes 3090 3490 0    50   ~ 0
 10:1 VOLTAGE DIVIDER
 Wire Wire Line
-	4080 4030 4080 4000
+	4080 4020 4080 3990
 Wire Wire Line
-	4080 3720 4080 3770
+	4080 3710 4080 3760
 $Comp
 L power:GND #PWR02
 U 1 1 5F4755CE
-P 4080 4030
-F 0 "#PWR02" H 4080 3780 50  0001 C CNN
-F 1 "GND" H 4085 3857 50  0000 C CNN
-F 2 "" H 4080 4030 50  0001 C CNN
-F 3 "" H 4080 4030 50  0001 C CNN
-	1    4080 4030
+P 4080 4020
+F 0 "#PWR02" H 4080 3770 50  0001 C CNN
+F 1 "GND" H 4085 3847 50  0000 C CNN
+F 2 "" H 4080 4020 50  0001 C CNN
+F 3 "" H 4080 4020 50  0001 C CNN
+	1    4080 4020
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 5F47540B
-P 3920 3720
-F 0 "R1" V 3724 3720 50  0000 C CNN
-F 1 "27k/0.1%" V 3815 3720 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3920 3720 50  0001 C CNN
-F 3 "~" H 3920 3720 50  0001 C CNN
-F 4 "‎P20138CT-ND‎" V 3920 3720 50  0001 C CNN "DigiKey_PN"
-	1    3920 3720
+P 3920 3710
+F 0 "R1" V 3724 3710 50  0000 C CNN
+F 1 "27k/0.1%" V 3815 3710 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3920 3710 50  0001 C CNN
+F 3 "~" H 3920 3710 50  0001 C CNN
+F 4 "‎P20138CT-ND‎" V 3920 3710 50  0001 C CNN "DigiKey_PN"
+	1    3920 3710
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R2
 U 1 1 5F475325
-P 4080 3870
-F 0 "R2" H 3940 3905 50  0000 L CNN
-F 1 "3k/0.1%" H 3720 3820 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4080 3870 50  0001 C CNN
-F 3 "~" H 4080 3870 50  0001 C CNN
-F 4 "P20072CT-ND‎" H 4080 3870 50  0001 C CNN "DigiKey_PN"
-	1    4080 3870
+P 4080 3860
+F 0 "R2" H 3940 3895 50  0000 L CNN
+F 1 "3k/0.1%" H 3720 3810 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4080 3860 50  0001 C CNN
+F 3 "~" H 4080 3860 50  0001 C CNN
+F 4 "P20072CT-ND‎" H 4080 3860 50  0001 C CNN "DigiKey_PN"
+	1    4080 3860
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -577,54 +525,128 @@ F 4 "587-1334-1-ND" H 7410 2490 50  0001 C CNN "DigiKey_PN"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3770 3720 3820 3720
+	3770 3710 3820 3710
 $Comp
 L Device:C_Small C9
 U 1 1 5F52B2E4
-P 4390 3870
-F 0 "C9" H 4465 3880 50  0000 L CNN
-F 1 "10nF" H 4410 3795 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4390 3870 50  0001 C CNN
-F 3 "~" H 4390 3870 50  0001 C CNN
-	1    4390 3870
+P 4390 3860
+F 0 "C9" H 4465 3870 50  0000 L CNN
+F 1 "10nF" H 4410 3785 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4390 3860 50  0001 C CNN
+F 3 "~" H 4390 3860 50  0001 C CNN
+	1    4390 3860
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4540 3720 4390 3720
-Connection ~ 4080 3720
+	4540 3710 4390 3710
+Connection ~ 4080 3710
 Wire Wire Line
-	4080 3720 4020 3720
+	4080 3710 4020 3710
 Wire Wire Line
-	4390 3770 4390 3720
-Connection ~ 4390 3720
+	4390 3760 4390 3710
+Connection ~ 4390 3710
 Wire Wire Line
-	4390 3720 4080 3720
+	4390 3710 4080 3710
 Wire Wire Line
-	4390 3970 4390 4000
+	4390 3960 4390 3990
 Wire Wire Line
-	4390 4000 4080 4000
-Connection ~ 4080 4000
+	4390 3990 4080 3990
+Connection ~ 4080 3990
 Wire Wire Line
-	4080 4000 4080 3970
+	4080 3990 4080 3960
 $Comp
-L Graphic:Logo_Open_Hardware_Small #LOGO?
+L Graphic:Logo_Open_Hardware_Small #LOGO1
 U 1 1 5F51AA5B
-P 5315 4985
-F 0 "#LOGO?" H 5315 5260 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 5315 4760 50  0001 C CNN
-F 2 "Symbol:OSHW-Logo2_7.3x6mm_Copper" H 5315 4985 50  0001 C CNN
-F 3 "~" H 5315 4985 50  0001 C CNN
-	1    5315 4985
+P 5340 4985
+F 0 "#LOGO1" H 5340 5260 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 5340 4760 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_Copper" H 5340 4985 50  0001 C CNN
+F 3 "~" H 5340 4985 50  0001 C CNN
+	1    5340 4985
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	5705 5290 4915 5290
+	5730 5290 4940 5290
 Wire Notes Line
-	4915 5290 4915 4585
+	4940 5290 4940 4585
 Wire Notes Line
-	4915 4585 5705 4585
+	4940 4585 5730 4585
 Wire Notes Line
-	5705 4585 5705 5290
-Text Notes 4930 4675 0    50   ~ 0
+	5730 4585 5730 5290
+Text Notes 4955 4675 0    50   ~ 0
 OSHW LOGO
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F4E4234
+P 4995 4430
+F 0 "H4" H 5095 4476 50  0000 L CNN
+F 1 "MountingHole" H 5095 4385 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4995 4430 50  0001 C CNN
+F 3 "~" H 4995 4430 50  0001 C CNN
+	1    4995 4430
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F541A68
+P 4995 3610
+F 0 "H1" H 5095 3659 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5095 3568 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 4995 3610 50  0001 C CNN
+F 3 "~" H 4995 3610 50  0001 C CNN
+	1    4995 3610
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F4E3ED4
+P 4990 4250
+F 0 "H3" H 5090 4296 50  0000 L CNN
+F 1 "MountingHole" H 5090 4205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4990 4250 50  0001 C CNN
+F 3 "~" H 4990 4250 50  0001 C CNN
+	1    4990 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5F54DC92
+P 5000 3955
+F 0 "H2" H 5100 4004 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5100 3913 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 5000 3955 50  0001 C CNN
+F 3 "~" H 5000 3955 50  0001 C CNN
+	1    5000 3955
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5F54E691
+P 4995 3710
+F 0 "#PWR04" H 4995 3460 50  0001 C CNN
+F 1 "GND" H 5135 3640 50  0000 C CNN
+F 2 "" H 4995 3710 50  0001 C CNN
+F 3 "" H 4995 3710 50  0001 C CNN
+	1    4995 3710
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5F55451D
+P 5000 4055
+F 0 "#PWR05" H 5000 3805 50  0001 C CNN
+F 1 "GND" H 5135 4025 50  0000 C CNN
+F 2 "" H 5000 4055 50  0001 C CNN
+F 3 "" H 5000 4055 50  0001 C CNN
+	1    5000 4055
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4880 4535 5795 4535
+Wire Notes Line
+	5795 4535 5795 3400
+Wire Notes Line
+	4880 3400 5795 3400
+Wire Notes Line
+	4880 3400 4880 4535
 $EndSCHEMATC
