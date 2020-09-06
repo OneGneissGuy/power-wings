@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L Connector_Generic:Conn_01x12 J2
 U 1 1 5F4351FA
-P 7420 4100
-F 0 "J2" H 7425 4700 50  0000 C CNN
-F 1 "Conn_01x12" H 7270 3400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 7420 4100 50  0001 C CNN
-F 3 "~" H 7420 4100 50  0001 C CNN
-	1    7420 4100
+P 7250 4100
+F 0 "J2" H 7255 4700 50  0000 C CNN
+F 1 "Conn_01x12" H 7100 3400 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 7250 4100 50  0001 C CNN
+F 3 "~" H 7250 4100 50  0001 C CNN
+	1    7250 4100
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -46,10 +46,10 @@ F 3 "" H 5740 3000 50  0001 C CNN
 	1    5740 3000
 	1    0    0    -1  
 $EndComp
-Text GLabel 7785 3900 2    50   Input ~ 0
+Text GLabel 7615 3900 2    50   Input ~ 0
 VUSB
 Wire Wire Line
-	7620 3900 7745 3900
+	7450 3900 7575 3900
 $Comp
 L power:GND #PWR03
 U 1 1 5F43D573
@@ -68,17 +68,17 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5F43E163
-P 7745 3900
-F 0 "#FLG02" H 7745 3975 50  0001 C CNN
-F 1 "PWR_FLAG" H 7595 4055 50  0000 C CNN
-F 2 "" H 7745 3900 50  0001 C CNN
-F 3 "~" H 7745 3900 50  0001 C CNN
-	1    7745 3900
+P 7575 3900
+F 0 "#FLG02" H 7575 3975 50  0001 C CNN
+F 1 "PWR_FLAG" H 7425 4055 50  0000 C CNN
+F 2 "" H 7575 3900 50  0001 C CNN
+F 3 "~" H 7575 3900 50  0001 C CNN
+	1    7575 3900
 	-1   0    0    1   
 $EndComp
-Connection ~ 7745 3900
+Connection ~ 7575 3900
 Wire Wire Line
-	7745 3900 7785 3900
+	7575 3900 7615 3900
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5F43E24F
@@ -93,22 +93,15 @@ $EndComp
 Connection ~ 6325 3900
 Text Label 3220 3710 0    50   ~ 0
 BATT+
-Text GLabel 4540 3710 2    50   Input ~ 0
-A1
-Text GLabel 6590 4100 0    50   Input ~ 0
-A1
 Wire Wire Line
 	6590 4100 6740 4100
-NoConn ~ 7620 3700
-NoConn ~ 7620 3800
-NoConn ~ 7620 4000
-NoConn ~ 7620 4100
-NoConn ~ 7620 4200
-NoConn ~ 7620 4300
-NoConn ~ 7620 4400
-NoConn ~ 7620 4500
-NoConn ~ 7620 4600
-NoConn ~ 7620 4700
+NoConn ~ 7450 3800
+NoConn ~ 7450 4000
+NoConn ~ 7450 4100
+NoConn ~ 7450 4200
+NoConn ~ 7450 4300
+NoConn ~ 7450 4400
+NoConn ~ 7450 4500
 NoConn ~ 6740 3700
 NoConn ~ 6740 3800
 NoConn ~ 6740 4000
@@ -270,7 +263,7 @@ Wire Wire Line
 Connection ~ 4330 2320
 Text Label 4980 2470 0    50   ~ 0
 ROSC
-NoConn ~ 7620 3600
+NoConn ~ 7450 3600
 NoConn ~ 6740 3600
 Wire Notes Line
 	5910 3400 8150 3400
@@ -649,4 +642,92 @@ Wire Notes Line
 	4880 3400 5795 3400
 Wire Notes Line
 	4880 3400 4880 4535
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 5F572FDE
+P 3700 4900
+F 0 "J4" H 3700 4600 50  0000 C CNN
+F 1 "QWIIC" H 3700 5100 50  0000 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 3700 4900 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/product-files/4328/4328_C13916-001_CCSH-W10-04-BK-RC-A.pdf" H 3700 4900 50  0001 C CNN
+F 4 "455-1804-1-ND" H 3900 5200 50  0000 C CNN "DigiKey_PN"
+	1    3700 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5F5932C7
+P 4000 5100
+F 0 "#PWR08" H 4000 4850 50  0001 C CNN
+F 1 "GND" H 4005 4927 50  0000 C CNN
+F 2 "" H 4000 5100 50  0001 C CNN
+F 3 "" H 4000 5100 50  0001 C CNN
+	1    4000 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 5000 4000 5000
+Wire Wire Line
+	4000 5000 4000 5100
+$Comp
+L power:+3V3 #PWR06
+U 1 1 5F59A739
+P 7600 3595
+F 0 "#PWR06" H 7600 3445 50  0001 C CNN
+F 1 "+3V3" H 7600 3730 50  0000 C CNN
+F 2 "" H 7600 3595 50  0001 C CNN
+F 3 "" H 7600 3595 50  0001 C CNN
+	1    7600 3595
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3700 7600 3700
+Wire Wire Line
+	7600 3700 7600 3595
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5F5B29C7
+P 7600 3700
+F 0 "#FLG04" H 7600 3775 50  0001 C CNN
+F 1 "PWR_FLAG" H 7365 3780 50  0000 C CNN
+F 2 "" H 7600 3700 50  0001 C CNN
+F 3 "~" H 7600 3700 50  0001 C CNN
+	1    7600 3700
+	-1   0    0    1   
+$EndComp
+Connection ~ 7600 3700
+Text Label 4540 3710 0    50   ~ 0
+A1
+Text Label 6590 4100 0    50   ~ 0
+A1
+Wire Wire Line
+	7450 4700 7530 4700
+Wire Wire Line
+	7450 4600 7530 4600
+Text Label 7530 4700 0    50   ~ 0
+SDA
+Text Label 7530 4600 0    50   ~ 0
+SCL
+Wire Wire Line
+	3900 4700 4050 4700
+Wire Wire Line
+	3900 4800 4050 4800
+Text Label 4050 4700 2    50   ~ 0
+SDA
+Text Label 4050 4800 2    50   ~ 0
+SCL
+Text GLabel 3950 4900 2    50   Input ~ 0
+VUSB
+Wire Wire Line
+	3900 4900 3950 4900
+Wire Notes Line
+	3050 4450 3050 5300
+Wire Notes Line
+	4750 5300 4750 4450
+Wire Notes Line
+	4750 4450 3050 4450
+Text Notes 3600 4550 0    50   ~ 0
+CONNECTORS
+Wire Notes Line
+	3050 5300 4750 5300
 $EndSCHEMATC
