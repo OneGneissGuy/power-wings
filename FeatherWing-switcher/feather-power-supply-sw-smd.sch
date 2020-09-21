@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Feather Switcher"
-Date "2020-09-01"
+Date "2020-09-21"
 Rev "0.1"
 Comp ""
 Comment1 "Adafruit FeatherWing compatible 5V switching power supply"
@@ -251,6 +251,8 @@ F 0 "U1" H 5350 2660 50  0000 C CNN
 F 1 "TPS5405DR" H 5690 2660 50  0000 C CNN
 F 2 "digikey-footprints:SOIC-8_W3.9mm" H 5650 1870 50  0001 L CIN
 F 3 "https://www.ti.com/lit/ds/symlink/tps5405.pdf" H 5600 2320 50  0001 C CNN
+F 4 "TPS5405DR" H 5600 2320 50  0001 C CNN "MPN"
+F 5 "296-30579-1-ND" H 5970 1870 50  0000 C CNN "Digikey_PN"
 	1    5600 2320
 	1    0    0    -1  
 $EndComp
@@ -589,7 +591,7 @@ F 0 "F1" V 3470 2310 50  0000 C CNN
 F 1 "24V 1.1A" V 3494 2320 50  0001 C CNN
 F 2 "Fuse:Fuse_1812_4532Metric_Castellated" H 3430 2120 50  0001 L CNN
 F 3 "~" H 3380 2320 50  0001 C CNN
-F 4 "F5632CT-ND" V 3250 2310 50  0000 C CNN "DigiKey-PN"
+F 4 "F5632CT-ND" V 3290 2360 50  0000 C CNN "DigiKey-PN"
 F 5 "1812L110/24DR" V 3380 2320 50  0001 C CNN "MPN"
 F 6 "Littelfuse Inc." V 3380 2320 50  0001 C CNN "LittleFuse"
 	1    3380 2320
@@ -735,10 +737,12 @@ $Comp
 L Device:Q_PMOS_GSD Q1
 U 1 1 5F6B889D
 P 3780 2420
-F 0 "Q1" V 4122 2420 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 4031 2420 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23" H 3980 2520 50  0001 C CNN
-F 3 "~" H 3780 2420 50  0001 C CNN
+F 0 "Q1" V 4010 2420 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 4031 2420 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3980 2520 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/DMP3099L.pdf" H 3780 2420 50  0001 C CNN
+F 4 "DMP3099L-7" V 3780 2420 50  0001 C CNN "MPN"
+F 5 "DMP3099L-7DICT-ND" H 3330 2500 50  0000 C CNN "Digikey_PN"
 	1    3780 2420
 	0    -1   -1   0   
 $EndComp

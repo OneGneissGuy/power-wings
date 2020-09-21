@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/jf/CAD Drawings/Kicad/power-wings/FeatherWing-switcher/feather-power-supply-sw-smd.sch</source>
-    <date>Mon 21 Sep 2020 10:41:58 AM PDT</date>
+    <date>Mon 21 Sep 2020 02:50:33 PM PDT</date>
     <tool>Eeschema 5.1.6-c6e7f7d~87~ubuntu18.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -84,6 +84,10 @@
       <value>TPS5405DR</value>
       <footprint>digikey-footprints:SOIC-8_W3.9mm</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/tps5405.pdf</datasheet>
+      <fields>
+        <field name="Digikey_PN">296-30579-1-ND</field>
+        <field name="MPN">TPS5405DR</field>
+      </fields>
       <libsource lib="custom" part="TPS5405DR" description="6.5V to 28V, 5-V Fixed-output 2A output step-down regulator with integrated mosfet"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F4D3F9D</tstamp>
@@ -111,7 +115,7 @@
       <tstamp>5F5C3C5E</tstamp>
     </comp>
     <comp ref="R2">
-      <value>100K*</value>
+      <value>100K</value>
       <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
@@ -268,8 +272,12 @@
     </comp>
     <comp ref="Q1">
       <value>Q_PMOS_GSD</value>
-      <footprint>Package_TO_SOT_SMD:TSOT-23</footprint>
-      <datasheet>~</datasheet>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/DMP3099L.pdf</datasheet>
+      <fields>
+        <field name="Digikey_PN">DMP3099L-7DICT-ND</field>
+        <field name="MPN">DMP3099L-7</field>
+      </fields>
       <libsource lib="Device" part="Q_PMOS_GSD" description="P-MOSFET transistor, gate/source/drain"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F6B889D</tstamp>
@@ -601,7 +609,7 @@
       <node ref="Q1" pin="3"/>
       <node ref="F1" pin="2"/>
     </net>
-    <net code="2" name="VUSB">
+    <net code="2" name="+5V">
       <node ref="J5" pin="2"/>
       <node ref="L1" pin="2"/>
       <node ref="C5" pin="1"/>
