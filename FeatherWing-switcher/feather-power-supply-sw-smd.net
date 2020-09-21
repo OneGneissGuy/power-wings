@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "/home/jf/CAD Drawings/Kicad/power-wings/FeatherWing-switcher/feather-power-supply-sw-smd.sch")
-    (date "Mon 21 Sep 2020 10:42:08 AM PDT")
+    (date "Mon 21 Sep 2020 10:58:09 AM PDT")
     (tool "Eeschema 5.1.6-c6e7f7d~87~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -93,7 +93,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5F5C3C5E))
     (comp (ref R2)
-      (value 100K*)
+      (value 100K)
       (footprint Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder)
       (datasheet ~)
       (fields
@@ -483,7 +483,7 @@
     (net (code 1) (name "Net-(F1-Pad2)")
       (node (ref Q1) (pin 3))
       (node (ref F1) (pin 2)))
-    (net (code 2) (name VUSB)
+    (net (code 2) (name +5V)
       (node (ref J5) (pin 2))
       (node (ref L1) (pin 2))
       (node (ref C5) (pin 1))

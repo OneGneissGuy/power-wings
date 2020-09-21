@@ -36,7 +36,7 @@ F 3 "" H 5740 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7615 3900 2    50   Input ~ 0
-VUSB
++5V
 Wire Wire Line
 	7450 3900 7575 3900
 $Comp
@@ -116,7 +116,7 @@ F 5 "" H 6880 2490 50  0001 C CNN "DigiKey-PN"
 	0    1    1    0   
 $EndComp
 Text GLabel 7910 2170 2    50   Input ~ 0
-VUSB
++5V
 $Comp
 L Device:C_Small C8
 U 1 1 5F4EB59F
@@ -563,7 +563,7 @@ SDA
 Text Label 3650 4650 2    50   ~ 0
 SCL
 Text GLabel 3550 4750 2    50   Input ~ 0
-VUSB
++5V
 Wire Wire Line
 	3500 4750 3550 4750
 Text Notes 3090 4390 0    50   Italic 10
@@ -627,7 +627,7 @@ Wire Wire Line
 Wire Wire Line
 	4300 4650 4500 4650
 Text GLabel 4400 4750 2    50   Input ~ 0
-VUSB
++5V
 $Comp
 L power:GND #PWR08
 U 1 1 5F6AA64A
