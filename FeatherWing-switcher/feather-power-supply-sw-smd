@@ -1,0 +1,41 @@
+Source,/home/jf/CAD Drawings/Kicad/power-wings/FeatherWing-switcher/feather-power-supply-sw-smd.sch
+Kicad Rev,Eeschema 5.1.6-c6e7f7d~87~ubuntu18.04.1
+Generated Date,Mon 21 Sep 2020 10:41:58 AM PDT
+
+Title,Feather Switcher
+Company,Not Set
+Revision,0.1
+Date Issue,2020-09-01
+Comment,Adafruit FeatherWing compatible 5V switching power supply
+
+Reference,Value,DigiKey_PN,DigiKey-PN,LittleFuse,MPN,Library,Library Ref
+J2,Conn_01x12,Connector_Generic,Conn_01x12
+D1,~,Device,D_Small_ALT
+C8,10nF,Device,C_Small
+R1,10K,‎P20138CT-ND‎,,,,Device,R_Small
+C7,10nF,Device,C_Small
+C2,10uF,1276-3100-1-ND‎,,,,Device,C_Small
+C1,0.1uF,Device,C_Small
+U1,TPS5405DR,custom,TPS5405DR
+L1,4.7uH,SRN3012TA-4R7MCT-ND‎,,,,Device,L_Small
+C6,22uF,587-1334-1-ND,,,,Device,C_Small
+R2,100K*,‎P20138CT-ND‎,,,,Device,R_Small
+JP1,SolderJumper_2_Bridged,Jumper,SolderJumper_2_Bridged
+R3,100K,‎P20138CT-ND‎,,,,Device,R_Small
+R4,10K,P20072CT-ND‎,,,,Device,R_Small
+C5,22uF,587-1334-1-ND,,,,Device,C_Small
+C9,10nF,Device,C_Small
+H4,MountingHole,Mechanical,MountingHole
+H1,MountingHole_Pad,Mechanical,MountingHole_Pad
+H3,MountingHole,Mechanical,MountingHole
+H2,MountingHole_Pad,Mechanical,MountingHole_Pad
+J4,QWIIC,455-1804-1-ND,,,,Connector_Generic,Conn_01x04
+LOGO1,Logo_Open_Hardware_Small,Graphic,Logo_Open_Hardware_Small
+F1,24V 1.1A,,F5632CT-ND,Littelfuse Inc.,1812L110/24DR,Device,Polyfuse_Small
+J5,0.1"x4,Connector_Generic,Conn_01x04
+D2,5V_OK,Device,LED_Small
+R5,1k,Device,R_Small
+J3,Conn_01x16,Connector_Generic,Conn_01x16
+Q1,Q_PMOS_GSD,Device,Q_PMOS_GSD
+TP1,TestPoint,Connector,TestPoint
+J1,5.08mm,Connector_Generic,Conn_01x02
