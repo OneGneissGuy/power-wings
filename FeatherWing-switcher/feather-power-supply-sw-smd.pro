@@ -1,4 +1,4 @@
-update=Tue 15 Sep 2020 04:34:47 PM PDT
+update=Mon 21 Sep 2020 12:33:21 AM PDT
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=feather-power-supply.net
+LastNetListRead=feather-power-supply-sw-smd.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0

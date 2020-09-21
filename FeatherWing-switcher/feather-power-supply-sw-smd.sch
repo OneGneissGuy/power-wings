@@ -25,17 +25,6 @@ F 3 "~" H 7250 4100 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x16 J3
-U 1 1 5F435436
-P 6940 4300
-F 0 "J3" H 6905 5100 50  0000 L CNN
-F 1 "Conn_01x16" H 6535 3385 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 6940 4300 50  0001 C CNN
-F 3 "~" H 6940 4300 50  0001 C CNN
-	1    6940 4300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR01
 U 1 1 5F4380C0
 P 5740 3000
@@ -91,8 +80,6 @@ F 3 "~" H 6325 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6325 3900
-Text Label 3220 3710 0    50   ~ 0
-VIN
 Wire Wire Line
 	6590 4100 6740 4100
 NoConn ~ 7450 3800
@@ -240,20 +227,9 @@ Wire Wire Line
 	6000 2620 6160 2620
 Wire Wire Line
 	6160 2620 6160 2170
-Wire Wire Line
-	3680 2420 4090 2420
-Wire Wire Line
-	4090 2420 4090 2910
-Wire Wire Line
-	4090 2910 4330 2910
 Connection ~ 4330 2910
-Text Label 4750 2320 0    50   ~ 0
-VIN
 Wire Wire Line
 	4330 2320 4330 2450
-Wire Wire Line
-	4330 2320 4490 2320
-Connection ~ 4330 2320
 Text Label 4980 2470 0    50   ~ 0
 ROSC
 NoConn ~ 7450 3600
@@ -265,7 +241,7 @@ Wire Notes Line
 Wire Notes Line
 	8210 1580 8210 3280
 Wire Notes Line
-	3070 3280 3070 1570
+	2570 3280 2570 1570
 Connection ~ 5550 2910
 $Comp
 L custom:TPS5405DR U1
@@ -315,7 +291,7 @@ Wire Wire Line
 	7620 2430 7620 2170
 Connection ~ 7620 2170
 Wire Wire Line
-	7620 2170 7800 2170
+	7620 2170 7700 2170
 Wire Wire Line
 	7620 2630 7620 2910
 Wire Wire Line
@@ -323,17 +299,6 @@ Wire Wire Line
 Connection ~ 7360 2910
 Wire Wire Line
 	7360 2910 7620 2910
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5F4365A9
-P 3480 2320
-F 0 "J1" H 3490 2130 50  0000 C CNN
-F 1 "5.08mm" H 3570 2415 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3480 2320 50  0001 C CNN
-F 3 "~" H 3480 2320 50  0001 C CNN
-	1    3480 2320
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R2
 U 1 1 5F5CDBDB
@@ -355,9 +320,9 @@ Wire Wire Line
 Connection ~ 4830 2910
 Wire Wire Line
 	4830 2910 4990 2910
-Text Notes 5915 3515 0    50   ~ 0
+Text Notes 5930 3490 0    50   Italic 10
 FEATHER PINOUT
-Text Notes 3090 1655 0    50   ~ 0
+Text Notes 3080 1680 0    50   Italic 10
 VOLTAGE REGULATOR AND FILTERING
 Text Notes 4725 3255 0    50   ~ 0
 *Optional
@@ -372,58 +337,8 @@ F 3 "~" H 4260 2320 50  0001 C CNN
 	1    4260 2320
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4260 2320 4330 2320
-$Comp
-L Device:C_Small C3
-U 1 1 5F53386A
-P 4490 2550
-F 0 "C3" H 4380 2615 50  0000 L CNN
-F 1 "1uF" H 4345 2475 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4490 2550 50  0001 C CNN
-F 3 "https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf" H 4490 2550 50  0001 C CNN
-F 4 "587-2396-1-ND" H 4490 2550 50  0001 C CNN "DigiKey_PN"
-	1    4490 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C4
-U 1 1 5F533D97
-P 4645 2550
-F 0 "C4" H 4535 2615 50  0000 L CNN
-F 1 "0.1uF" H 4525 2475 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4645 2550 50  0001 C CNN
-F 3 "https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf" H 4645 2550 50  0001 C CNN
-F 4 "587-2396-1-ND" H 4645 2550 50  0001 C CNN "DigiKey_PN"
-	1    4645 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4490 2450 4490 2320
-Connection ~ 4490 2320
-Wire Wire Line
-	4645 2450 4645 2320
-Wire Wire Line
-	4490 2320 4645 2320
-Connection ~ 4645 2320
-Wire Wire Line
-	4645 2320 5200 2320
-Wire Wire Line
-	4645 2650 4645 2910
-Connection ~ 4645 2910
-Wire Wire Line
-	4645 2910 4830 2910
-Wire Wire Line
-	4490 2650 4490 2910
-Wire Wire Line
-	4330 2910 4490 2910
-Connection ~ 4490 2910
-Wire Wire Line
-	4490 2910 4645 2910
-Text Notes 4935 3475 0    50   ~ 0
-M2.5 mounting holes
-Wire Wire Line
-	3220 3710 3470 3710
+Text Notes 4910 3480 0    50   Italic 10
+MOUNTING HOLES
 Wire Notes Line
 	3070 4265 4760 4265
 Wire Notes Line
@@ -441,7 +356,7 @@ F 3 "~" H 3620 3710 50  0001 C CNN
 	1    3620 3710
 	1    0    0    -1  
 $EndComp
-Text Notes 3090 3480 0    50   ~ 0
+Text Notes 3090 3490 0    50   Italic 10
 11:1 VOLTAGE DIVIDER
 Wire Wire Line
 	4080 3710 4080 3760
@@ -515,16 +430,6 @@ Wire Wire Line
 Connection ~ 4290 3710
 Wire Wire Line
 	4290 3710 4080 3710
-Wire Notes Line
-	5730 5290 4940 5290
-Wire Notes Line
-	4940 5290 4940 4585
-Wire Notes Line
-	4940 4585 5730 4585
-Wire Notes Line
-	5730 4585 5730 5290
-Text Notes 4955 4675 0    50   ~ 0
-OSHW LOGO
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5F4E4234
@@ -591,14 +496,6 @@ F 3 "" H 5000 4055 50  0001 C CNN
 	1    5000 4055
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	4880 4535 5795 4535
-Wire Notes Line
-	5795 4535 5795 3400
-Wire Notes Line
-	4880 3400 5795 3400
-Wire Notes Line
-	4880 3400 4880 4535
 $Comp
 L Connector_Generic:Conn_01x04 J4
 U 1 1 5F572FDE
@@ -671,40 +568,40 @@ Text GLabel 3550 4750 2    50   Input ~ 0
 VUSB
 Wire Wire Line
 	3500 4750 3550 4750
-Text Notes 3600 4400 0    50   ~ 0
+Text Notes 3090 4390 0    50   Italic 10
 CONNECTORS
 $Comp
 L Graphic:Logo_Open_Hardware_Small LOGO1
 U 1 1 5F5741D6
-P 5340 4955
-F 0 "LOGO1" H 5340 5230 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 5340 4730 50  0001 C CNN
-F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 5340 4955 50  0001 C CNN
-F 3 "~" H 5340 4955 50  0001 C CNN
-	1    5340 4955
+P 5340 5095
+F 0 "LOGO1" H 5340 5370 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 5340 4870 50  0001 C CNN
+F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 5340 5095 50  0001 C CNN
+F 3 "~" H 5340 5095 50  0001 C CNN
+	1    5340 5095
 	1    0    0    -1  
 $EndComp
-Text Notes 3085 2175 0    50   ~ 0
+Text Notes 2290 4550 0    50   ~ 0
 6-15V DC IN
 $Comp
 L Device:Polyfuse_Small F1
 U 1 1 5F5C90E5
-P 3880 2320
-F 0 "F1" V 3815 2270 50  0000 C CNN
-F 1 "24V 1.1A" V 3994 2320 50  0001 C CNN
-F 2 "Fuse:Fuse_1812_4532Metric_Castellated" H 3930 2120 50  0001 L CNN
-F 3 "~" H 3880 2320 50  0001 C CNN
-F 4 "F5632CT-ND" V 3960 2270 50  0000 C CNN "DigiKey-PN"
-F 5 "1812L110/24DR" V 3880 2320 50  0001 C CNN "MPN"
-F 6 "Littelfuse Inc." V 3880 2320 50  0001 C CNN "LittleFuse"
-	1    3880 2320
+P 3380 2320
+F 0 "F1" V 3470 2310 50  0000 C CNN
+F 1 "24V 1.1A" V 3494 2320 50  0001 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric_Castellated" H 3430 2120 50  0001 L CNN
+F 3 "~" H 3380 2320 50  0001 C CNN
+F 4 "F5632CT-ND" V 3250 2310 50  0000 C CNN "DigiKey-PN"
+F 5 "1812L110/24DR" V 3380 2320 50  0001 C CNN "MPN"
+F 6 "Littelfuse Inc." V 3380 2320 50  0001 C CNN "LittleFuse"
+	1    3380 2320
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4260 2320 3980 2320
 Connection ~ 4260 2320
 Wire Wire Line
-	3780 2320 3680 2320
+	3280 2320 3180 2320
 Wire Notes Line
 	4750 4300 3070 4300
 Wire Wire Line
@@ -727,8 +624,6 @@ F 3 "~" H 4100 4750 50  0001 C CNN
 	1    4100 4750
 	-1   0    0    1   
 $EndComp
-Text Label 4500 4550 2    50   ~ 0
-SDA
 Text Label 4500 4650 2    50   ~ 0
 SCL
 Wire Wire Line
@@ -770,7 +665,7 @@ L Device:R_Small R5
 U 1 1 5F673EBF
 P 7800 2400
 F 0 "R5" H 7859 2446 50  0000 L CNN
-F 1 "330" H 7859 2355 50  0000 L CNN
+F 1 "1k" H 7859 2355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7800 2400 50  0001 C CNN
 F 3 "~" H 7800 2400 50  0001 C CNN
 	1    7800 2400
@@ -820,4 +715,146 @@ Wire Wire Line
 	7450 4600 7590 4600
 Text Label 7590 4600 2    50   ~ 0
 SCL
+$Comp
+L Connector_Generic:Conn_01x16 J3
+U 1 1 5F435436
+P 6940 4300
+F 0 "J3" H 6905 5100 50  0000 L CNN
+F 1 "Conn_01x16" H 6535 3385 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 6940 4300 50  0001 C CNN
+F 3 "~" H 6940 4300 50  0001 C CNN
+	1    6940 4300
+	1    0    0    -1  
+$EndComp
+Text Label 4500 4550 2    50   ~ 0
+SDA
+$Comp
+L power:VCC #PWR09
+U 1 1 5F6B3715
+P 3180 2140
+F 0 "#PWR09" H 3180 1990 50  0001 C CNN
+F 1 "VCC" H 3195 2313 50  0000 C CNN
+F 2 "" H 3180 2140 50  0001 C CNN
+F 3 "" H 3180 2140 50  0001 C CNN
+	1    3180 2140
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3180 2140 3180 2320
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 5F6B889D
+P 3780 2420
+F 0 "Q1" V 4122 2420 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 4031 2420 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23" H 3980 2520 50  0001 C CNN
+F 3 "~" H 3780 2420 50  0001 C CNN
+	1    3780 2420
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3480 2320 3580 2320
+Wire Wire Line
+	3780 2910 3780 2620
+Wire Wire Line
+	3780 2910 4330 2910
+$Comp
+L power:VCC #PWR010
+U 1 1 5F6D87E2
+P 2860 4640
+F 0 "#PWR010" H 2860 4490 50  0001 C CNN
+F 1 "VCC" H 2875 4813 50  0000 C CNN
+F 2 "" H 2860 4640 50  0001 C CNN
+F 3 "" H 2860 4640 50  0001 C CNN
+	1    2860 4640
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5F6D9688
+P 2860 4840
+F 0 "#PWR011" H 2860 4590 50  0001 C CNN
+F 1 "GND" H 2865 4667 50  0000 C CNN
+F 2 "" H 2860 4840 50  0001 C CNN
+F 3 "" H 2860 4840 50  0001 C CNN
+	1    2860 4840
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2740 4710 2860 4710
+Wire Wire Line
+	2860 4710 2860 4640
+Wire Wire Line
+	2860 4840 2860 4810
+Wire Wire Line
+	2860 4810 2740 4810
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F70232D
+P 7700 2170
+F 0 "TP1" H 7650 2450 50  0000 L CNN
+F 1 "TestPoint" H 7550 2370 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7900 2170 50  0001 C CNN
+F 3 "~" H 7900 2170 50  0001 C CNN
+	1    7700 2170
+	1    0    0    -1  
+$EndComp
+Connection ~ 7700 2170
+Wire Wire Line
+	7700 2170 7800 2170
+Text Notes 4900 4620 0    50   ~ 0
+M2.5
+Wire Notes Line
+	4880 3400 5800 3400
+Wire Notes Line
+	5800 4640 4880 4640
+Wire Notes Line
+	4880 3400 4880 4640
+Wire Notes Line
+	5800 3400 5800 4640
+Wire Notes Line
+	5800 4790 5800 5300
+Wire Notes Line
+	5800 5300 4880 5300
+Wire Notes Line
+	4880 5300 4880 4790
+Wire Notes Line
+	4880 4790 5800 4790
+Text Notes 4880 4870 0    50   Italic 10
+LOGOS
+Text Notes 4900 5270 0    50   ~ 0
+OSHW
+Text Notes 3120 1900 0    50   ~ 0
+6-15V DC IN
+Wire Wire Line
+	4330 2910 4830 2910
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5F4365A9
+P 2540 4710
+F 0 "J1" H 2550 4520 50  0000 C CNN
+F 1 "5.08mm" H 2630 4805 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2540 4710 50  0001 C CNN
+F 3 "~" H 2540 4710 50  0001 C CNN
+	1    2540 4710
+	-1   0    0    -1  
+$EndComp
+Text GLabel 4720 1910 0    50   Input ~ 0
+VIN_SW
+Wire Wire Line
+	4260 2320 4330 2320
+Wire Wire Line
+	5200 2320 4760 2320
+Connection ~ 4330 2320
+Wire Wire Line
+	4760 2320 4760 1910
+Wire Wire Line
+	4760 1910 4720 1910
+Connection ~ 4760 2320
+Wire Wire Line
+	4760 2320 4330 2320
+Text GLabel 3420 3710 0    50   Input ~ 0
+VIN_SW
+Wire Wire Line
+	3470 3710 3420 3710
 $EndSCHEMATC
