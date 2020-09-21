@@ -241,7 +241,7 @@ Wire Notes Line
 Wire Notes Line
 	8210 1580 8210 3280
 Wire Notes Line
-	2570 3280 2570 1570
+	3070 3290 3070 1580
 Connection ~ 5550 2910
 $Comp
 L custom:TPS5405DR U1
@@ -581,7 +581,7 @@ F 3 "~" H 5340 5095 50  0001 C CNN
 	1    5340 5095
 	1    0    0    -1  
 $EndComp
-Text Notes 2290 4550 0    50   ~ 0
+Text Notes 3120 5390 0    50   ~ 0
 6-15V DC IN
 $Comp
 L Device:Polyfuse_Small F1
@@ -602,8 +602,6 @@ Wire Wire Line
 Connection ~ 4260 2320
 Wire Wire Line
 	3280 2320 3180 2320
-Wire Notes Line
-	4750 4300 3070 4300
 Wire Wire Line
 	4080 3960 4080 3995
 Wire Wire Line
@@ -695,12 +693,6 @@ Wire Notes Line
 	8210 5300 5910 5300
 Wire Notes Line
 	5910 3400 5910 5300
-Wire Notes Line
-	4750 5290 3070 5290
-Wire Notes Line
-	4750 4300 4750 5290
-Wire Notes Line
-	3070 4300 3070 5290
 Wire Wire Line
 	6880 2170 6160 2170
 Connection ~ 6880 2170
@@ -761,33 +753,33 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR010
 U 1 1 5F6D87E2
-P 2860 4640
-F 0 "#PWR010" H 2860 4490 50  0001 C CNN
-F 1 "VCC" H 2875 4813 50  0000 C CNN
-F 2 "" H 2860 4640 50  0001 C CNN
-F 3 "" H 2860 4640 50  0001 C CNN
-	1    2860 4640
+P 3690 5480
+F 0 "#PWR010" H 3690 5330 50  0001 C CNN
+F 1 "VCC" H 3705 5653 50  0000 C CNN
+F 2 "" H 3690 5480 50  0001 C CNN
+F 3 "" H 3690 5480 50  0001 C CNN
+	1    3690 5480
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR011
 U 1 1 5F6D9688
-P 2860 4840
-F 0 "#PWR011" H 2860 4590 50  0001 C CNN
-F 1 "GND" H 2865 4667 50  0000 C CNN
-F 2 "" H 2860 4840 50  0001 C CNN
-F 3 "" H 2860 4840 50  0001 C CNN
-	1    2860 4840
+P 3690 5680
+F 0 "#PWR011" H 3690 5430 50  0001 C CNN
+F 1 "GND" H 3695 5507 50  0000 C CNN
+F 2 "" H 3690 5680 50  0001 C CNN
+F 3 "" H 3690 5680 50  0001 C CNN
+	1    3690 5680
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2740 4710 2860 4710
+	3570 5550 3690 5550
 Wire Wire Line
-	2860 4710 2860 4640
+	3690 5550 3690 5480
 Wire Wire Line
-	2860 4840 2860 4810
+	3690 5680 3690 5650
 Wire Wire Line
-	2860 4810 2740 4810
+	3690 5650 3570 5650
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5F70232D
@@ -831,12 +823,12 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5F4365A9
-P 2540 4710
-F 0 "J1" H 2550 4520 50  0000 C CNN
-F 1 "5.08mm" H 2630 4805 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2540 4710 50  0001 C CNN
-F 3 "~" H 2540 4710 50  0001 C CNN
-	1    2540 4710
+P 3370 5550
+F 0 "J1" H 3380 5360 50  0000 C CNN
+F 1 "5.08mm" H 3460 5645 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3370 5550 50  0001 C CNN
+F 3 "~" H 3370 5550 50  0001 C CNN
+	1    3370 5550
 	-1   0    0    -1  
 $EndComp
 Text GLabel 4720 1910 0    50   Input ~ 0
@@ -857,4 +849,12 @@ Text GLabel 3420 3710 0    50   Input ~ 0
 VIN_SW
 Wire Wire Line
 	3470 3710 3420 3710
+Wire Notes Line
+	3070 4300 3070 5910
+Wire Notes Line
+	3070 5910 4760 5910
+Wire Notes Line
+	4760 5910 4760 4300
+Wire Notes Line
+	4760 4300 3110 4300
 $EndSCHEMATC

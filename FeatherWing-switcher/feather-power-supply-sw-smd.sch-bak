@@ -853,4 +853,8 @@ Wire Wire Line
 Connection ~ 4760 2320
 Wire Wire Line
 	4760 2320 4330 2320
+Text GLabel 3420 3710 0    50   Input ~ 0
+VIN_SW
+Wire Wire Line
+	3470 3710 3420 3710
 $EndSCHEMATC
