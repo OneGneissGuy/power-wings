@@ -1,41 +1,31 @@
-Source,/home/jf/CAD Drawings/Kicad/power-wings/FeatherWing-switcher/feather-power-supply-sw-smd.sch
-Kicad Rev,Eeschema 5.1.6-c6e7f7d~87~ubuntu18.04.1
-Generated Date,Mon 21 Sep 2020 02:50:33 PM PDT
-
-Title,Feather Switcher
-Company,Not Set
-Revision,0.1
-Date Issue,2020-09-01
-Comment,Adafruit FeatherWing compatible 5V switching power supply
-
-Reference,Value,DigiKey_PN,Digikey_PN,MPN,DigiKey-PN,LittleFuse,Library,Library Ref
-J2,Conn_01x12,Connector_Generic,Conn_01x12
-D1,~,Device,D_Small_ALT
-C8,10nF,Device,C_Small
-R1,10K,‎P20138CT-ND‎,,,,,Device,R_Small
-C7,10nF,Device,C_Small
-C2,10uF,1276-3100-1-ND‎,,,,,Device,C_Small
-C1,0.1uF,Device,C_Small
-U1,TPS5405DR,,296-30579-1-ND,TPS5405DR,,,custom,TPS5405DR
-L1,4.7uH,SRN3012TA-4R7MCT-ND‎,,,,,Device,L_Small
-C6,22uF,587-1334-1-ND,,,,,Device,C_Small
-R2,100K,‎P20138CT-ND‎,,,,,Device,R_Small
-JP1,SolderJumper_2_Bridged,Jumper,SolderJumper_2_Bridged
-R3,100K,‎P20138CT-ND‎,,,,,Device,R_Small
-R4,10K,P20072CT-ND‎,,,,,Device,R_Small
-C5,22uF,587-1334-1-ND,,,,,Device,C_Small
-C9,10nF,Device,C_Small
-H4,MountingHole,Mechanical,MountingHole
-H1,MountingHole_Pad,Mechanical,MountingHole_Pad
-H3,MountingHole,Mechanical,MountingHole
-H2,MountingHole_Pad,Mechanical,MountingHole_Pad
-J4,QWIIC,455-1804-1-ND,,,,,Connector_Generic,Conn_01x04
-LOGO1,Logo_Open_Hardware_Small,Graphic,Logo_Open_Hardware_Small
-F1,24V 1.1A,,,1812L110/24DR,F5632CT-ND,Littelfuse Inc.,Device,Polyfuse_Small
-J5,0.1"x4,Connector_Generic,Conn_01x04
-D2,5V_OK,Device,LED_Small
-R5,1k,Device,R_Small
-J3,Conn_01x16,Connector_Generic,Conn_01x16
-Q1,Q_PMOS_GSD,,DMP3099L-7DICT-ND,DMP3099L-7,,,Device,Q_PMOS_GSD
-TP1,TestPoint,Connector,TestPoint
-J1,5.08mm,Connector_Generic,Conn_01x02
+Reference, Value, Footprint, Datasheet, DigiKey_PN, Digikey_PN, MPN, DigiKey-PN, LittleFuse, Manufacturer
+"J2","Conn_01x12","Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical","~"
+"C8","10nF","Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+"R1","10K","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~","‎P20138CT-ND‎","","","","",""
+"C7","10nF","Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+"C2","10uF","Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder","~","1276-3100-1-ND‎","","","","",""
+"C1","0.1uF","Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+"U1","TPS5405DR","digikey-footprints:SOIC-8_W3.9mm","https://www.ti.com/lit/ds/symlink/tps5405.pdf","","296-30579-1-ND","TPS5405DR","","",""
+"L1","4.7uH","My libs:TDK-VLS4012HBX","~","SRN3012TA-4R7MCT-ND‎","","","","",""
+"R2","100K","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~","‎P20138CT-ND‎","","","","",""
+"JP1","SolderJumper_2_Bridged","Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm","~"
+"R3","100K","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~","‎P20138CT-ND‎","","","","",""
+"R4","10K","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~","P20072CT-ND‎","","","","",""
+"C9","10nF","Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+"H4","MountingHole","MountingHole:MountingHole_2.7mm_M2.5","~"
+"H1","MountingHole_Pad","MountingHole:MountingHole_2.5mm_Pad","~"
+"H3","MountingHole","MountingHole:MountingHole_2.7mm_M2.5","~"
+"H2","MountingHole_Pad","MountingHole:MountingHole_2.5mm_Pad","~"
+"J4","QWIIC","Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal","https://cdn-shop.adafruit.com/product-files/4328/4328_C13916-001_CCSH-W10-04-BK-RC-A.pdf","455-1804-1-ND","","","","",""
+"LOGO1","Logo_Open_Hardware_Small","Symbol:OSHW-Symbol_6.7x6mm_SilkScreen","~"
+"F1","24V 1.1A","Fuse:Fuse_1812_4532Metric_Castellated","~","","","1812L110/24DR","F5632CT-ND","Littelfuse Inc.",""
+"J5","0.1"x4","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~"
+"J3","Conn_01x16","Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical","~"
+"Q1","Q_PMOS_GSD","Package_TO_SOT_SMD:SOT-23","https://www.diodes.com/assets/Datasheets/DMP3099L.pdf","","DMP3099L-7DICT-ND","DMP3099L-7","","",""
+"TP1","TestPoint","TestPoint:TestPoint_Pad_D1.5mm","~"
+"J1","5.08mm","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal","~","","277-1247-ND ","1729128","","","Phoenix Contact"
+"D1","~","Diode_SMD:D_SOD-123F","https://www.mccsemi.com/pdf/Products/SMD22PL-SMD210PL(SOD-123FL).pdf","","","SMD24PL-TP","SMD24PL-TPMSCT-ND","",""
+"C6","22uF","Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder","https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf","587-1334-1-ND","","","","",""
+"D2","5V_OK","LED_SMD:LED_0805_2012Metric_Castellated","~"
+"R5","1k","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+"C5","22uF","Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder","https://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf","587-1334-1-ND","","","","",""
