@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Feather Switcher"
-Date "2020-09-21"
-Rev "1.1"
+Date "2020-10-05"
+Rev "2.0"
 Comp ""
 Comment1 "Adafruit FeatherWing compatible 5V switching power supply"
 Comment2 "All capacitors are 0603 X7R class unless noted. C2,C5,C6 are 1206, low esr"
@@ -263,8 +263,6 @@ $EndComp
 Wire Wire Line
 	7620 2540 7620 2170
 Connection ~ 7620 2170
-Wire Wire Line
-	7620 2170 7700 2170
 Wire Wire Line
 	7620 2740 7620 2910
 Wire Wire Line
@@ -674,17 +672,6 @@ Wire Wire Line
 	3690 5680 3690 5650
 Wire Wire Line
 	3690 5650 3570 5650
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5F70232D
-P 7700 2170
-F 0 "TP1" H 7650 2450 50  0000 L CNN
-F 1 "TestPoint" H 7550 2370 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7900 2170 50  0001 C CNN
-F 3 "~" H 7900 2170 50  0001 C CNN
-	1    7700 2170
-	1    0    0    -1  
-$EndComp
 Text Notes 4900 4620 0    50   ~ 0
 M2.5
 Wire Notes Line
@@ -711,20 +698,6 @@ Text Notes 3120 1900 0    50   ~ 0
 6-15V DC IN
 Wire Wire Line
 	4330 2910 4830 2910
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5F4365A9
-P 3370 5550
-F 0 "J1" H 3380 5360 50  0000 C CNN
-F 1 "5.08mm" H 3460 5645 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3370 5550 50  0001 C CNN
-F 3 "~" H 3370 5550 50  0001 C CNN
-F 4 "1729128" H 3370 5550 50  0001 C CNN "MPN"
-F 5 "277-1247-ND " H 3370 5300 30  0000 C CNN "Digikey_PN"
-F 6 "Phoenix Contact" H 3370 5550 50  0001 C CNN "Manufacturer"
-	1    3370 5550
-	-1   0    0    -1  
-$EndComp
 Text GLabel 4720 1910 0    50   Input ~ 0
 VIN_SW
 Wire Wire Line
@@ -810,9 +783,6 @@ Wire Wire Line
 Wire Wire Line
 	7890 2800 7890 2910
 Wire Wire Line
-	7700 2170 7890 2170
-Connection ~ 7700 2170
-Wire Wire Line
 	7890 2910 7620 2910
 Connection ~ 7620 2910
 $Comp
@@ -844,4 +814,20 @@ A1
 Connection ~ 4290 3710
 Text GLabel 6740 4100 0    50   Input ~ 0
 A1
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5F4365A9
+P 3370 5650
+F 0 "J1" H 3380 5460 50  0000 C CNN
+F 1 "5.08mm" H 3460 5745 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3370 5650 50  0001 C CNN
+F 3 "~" H 3370 5650 50  0001 C CNN
+F 4 "1729128" H 3370 5650 50  0001 C CNN "MPN"
+F 5 "277-1247-ND " H 3440 5810 30  0000 C CNN "Digikey_PN"
+F 6 "Phoenix Contact" H 3370 5650 50  0001 C CNN "Manufacturer"
+	1    3370 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7620 2170 7890 2170
 $EndSCHEMATC
