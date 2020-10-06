@@ -9,7 +9,7 @@ Date "2020-09-21"
 Rev "1.1"
 Comp ""
 Comment1 "Adafruit FeatherWing compatible 5V switching power supply"
-Comment2 "All capacitors are X7R class. C2,C5,C6 are 1206, all others are 0603"
+Comment2 "All capacitors are 0603 X7R class unless noted. C2,C5,C6 are 1206, low esr"
 Comment3 "All resistors are 1% 0603"
 Comment4 "Purple text indicate DigiKey part numbers"
 $EndDescr

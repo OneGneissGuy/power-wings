@@ -80,8 +80,6 @@ F 3 "~" H 6325 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6325 3900
-Wire Wire Line
-	6590 4100 6740 4100
 NoConn ~ 7450 3800
 NoConn ~ 7450 4000
 NoConn ~ 7450 4100
@@ -388,7 +386,6 @@ Wire Wire Line
 	4080 3710 4020 3710
 Wire Wire Line
 	4290 3745 4290 3710
-Connection ~ 4290 3710
 Wire Wire Line
 	4290 3710 4080 3710
 $Comp
@@ -509,26 +506,8 @@ F 3 "~" H 7600 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 7600 3700
-Text Label 4540 3710 2    50   ~ 0
-A1
-Text Label 6590 4100 0    50   ~ 0
-A1
-Wire Wire Line
-	7450 4700 7590 4700
-Text Label 7590 4700 2    50   ~ 0
-SDA
-Wire Wire Line
-	3500 4550 3650 4550
-Wire Wire Line
-	3500 4650 3650 4650
-Text Label 3650 4550 2    50   ~ 0
-SDA
-Text Label 3650 4650 2    50   ~ 0
-SCL
-Text GLabel 3550 4750 2    50   Input ~ 0
+Text GLabel 3500 4750 2    50   Input ~ 0
 +5V
-Wire Wire Line
-	3500 4750 3550 4750
 Text Notes 3090 4390 0    50   Italic 10
 CONNECTORS
 $Comp
@@ -583,13 +562,7 @@ F 3 "~" H 4100 4750 50  0001 C CNN
 	1    4100 4750
 	-1   0    0    1   
 $EndComp
-Text Label 4500 4650 2    50   ~ 0
-SCL
-Wire Wire Line
-	4300 4550 4500 4550
-Wire Wire Line
-	4300 4650 4500 4650
-Text GLabel 4400 4750 2    50   Input ~ 0
+Text GLabel 4300 4750 2    50   Input ~ 0
 +5V
 $Comp
 L power:GND #PWR08
@@ -606,8 +579,6 @@ Wire Wire Line
 	4300 4850 4450 4850
 Wire Wire Line
 	4450 4850 4450 4950
-Wire Wire Line
-	4300 4750 4400 4750
 Wire Notes Line
 	3070 1570 8210 1570
 Wire Notes Line
@@ -630,10 +601,6 @@ Connection ~ 6880 2910
 Connection ~ 6580 2910
 Wire Wire Line
 	3600 4850 3500 4850
-Wire Wire Line
-	7450 4600 7590 4600
-Text Label 7590 4600 2    50   ~ 0
-SCL
 $Comp
 L Connector_Generic:Conn_01x16 J3
 U 1 1 5F435436
@@ -645,8 +612,6 @@ F 3 "~" H 6940 4300 50  0001 C CNN
 	1    6940 4300
 	1    0    0    -1  
 $EndComp
-Text Label 4500 4550 2    50   ~ 0
-SDA
 $Comp
 L power:VCC #PWR09
 U 1 1 5F6B3715
@@ -862,4 +827,21 @@ F 4 "587-1334-1-ND" H 7410 2320 30  0000 C CNN "DigiKey_PN"
 	1    7360 2640
 	1    0    0    -1  
 $EndComp
+Text GLabel 7450 4600 2    50   Input ~ 0
+SCL
+Text GLabel 7450 4700 2    50   Input ~ 0
+SDA
+Text GLabel 4300 4650 2    50   Input ~ 0
+SCL
+Text GLabel 4300 4550 2    50   Input ~ 0
+SDA
+Text GLabel 3500 4650 2    50   Input ~ 0
+SCL
+Text GLabel 3500 4550 2    50   Input ~ 0
+SDA
+Text GLabel 4540 3710 2    50   Input ~ 0
+A1
+Connection ~ 4290 3710
+Text GLabel 6740 4100 0    50   Input ~ 0
+A1
 $EndSCHEMATC
