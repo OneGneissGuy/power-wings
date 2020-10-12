@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name FeatherWing-switcher-adj)(type KiCad)(uri ${KIPRJMOD}/FeatherWing-switcher-adj.pretty)(options "")(descr ""))
+)
