@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP TPS5405DR
-D 6.5V to 28V, 5-V Fixed-output 2A output step-down regulator with integrated mosfet
-K Step-Down DC-DC Switching Regulator High Voltage Adjustable Frequency
-F https://www.ti.com/lit/ds/symlink/tps5405.pdf
-$ENDCMP
-#
-#End Doc Library
