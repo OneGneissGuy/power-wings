@@ -11,7 +11,7 @@ Comp ""
 Comment1 "Adafruit FeatherWing compatible 5V switching power supply"
 Comment2 "All capacitors are 0603 X7R class unless noted. C2,C3,C5,C6 are 1206, low esr"
 Comment3 "All resistors are 1% 0603"
-Comment4 "Purple text indicate DigiKey part numbers"
+Comment4 "Purple text indicate Digi-Key part numbers"
 $EndDescr
 $Comp
 L Connector_Generic:Conn_01x12 J1
@@ -24,8 +24,6 @@ F 3 "~" H 7250 4100 50  0001 C CNN
 	1    7250 4100
 	-1   0    0    -1  
 $EndComp
-Text GLabel 7615 3900 2    50   Input ~ 0
-+5V
 Wire Wire Line
 	7450 3900 7575 3900
 $Comp
@@ -259,7 +257,7 @@ F 0 "J3" H 3300 4450 50  0000 C CNN
 F 1 "QWIIC" H 3300 4950 50  0000 C CNN
 F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 3300 4750 50  0001 C CNN
 F 3 "https://cdn-shop.adafruit.com/product-files/4328/4328_C13916-001_CCSH-W10-04-BK-RC-A.pdf" H 3300 4750 50  0001 C CNN
-F 4 "455-1804-1-ND" H 3290 5040 30  0000 C CNN "DigiKey_PN"
+F 4 "455-1804-1-ND" H 3290 5040 30  0001 C CNN "DigiKey_PN"
 	1    3300 4750
 	-1   0    0    1   
 $EndComp
@@ -276,17 +274,6 @@ F 3 "" H 3600 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3600 4850 3600 4950
-$Comp
-L power:+3V3 #PWR03
-U 1 1 5F59A739
-P 7600 3595
-F 0 "#PWR03" H 7600 3445 50  0001 C CNN
-F 1 "+3V3" H 7600 3730 50  0000 C CNN
-F 2 "" H 7600 3595 50  0001 C CNN
-F 3 "" H 7600 3595 50  0001 C CNN
-	1    7600 3595
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7450 3700 7600 3700
 Wire Wire Line
@@ -303,8 +290,6 @@ F 3 "~" H 7600 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 7600 3700
-Text GLabel 3500 4750 2    50   Input ~ 0
-+5V
 Text Notes 3090 4390 0    50   Italic 10
 CONNECTORS
 $Comp
@@ -331,8 +316,6 @@ F 3 "~" H 4100 4750 50  0001 C CNN
 	1    4100 4750
 	-1   0    0    1   
 $EndComp
-Text GLabel 4300 4750 2    50   Input ~ 0
-+5V
 $Comp
 L power:GND #PWR09
 U 1 1 5F6AA64A
@@ -497,15 +480,15 @@ $EndComp
 $Comp
 L Device:Polyfuse_Small F1
 U 1 1 5F5C90E5
-P 3450 2100
-F 0 "F1" V 3550 2100 50  0000 C CNN
-F 1 "24V 1.1A" V 3564 2100 50  0001 C CNN
-F 2 "Fuse:Fuse_1812_4532Metric_Castellated" H 3500 1900 50  0001 L CNN
-F 3 "~" H 3450 2100 50  0001 C CNN
-F 4 "F5632CT-ND" V 3360 2140 30  0001 C CNN "DigiKey-PN"
-F 5 "1812L110/24DR" V 3450 2100 50  0001 C CNN "MPN"
-F 6 "Littelfuse Inc." V 3450 2100 50  0001 C CNN "LittleFuse"
-	1    3450 2100
+P 3475 2100
+F 0 "F1" V 3575 2100 50  0000 C CNN
+F 1 "24V 1.1A" V 3589 2100 50  0001 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric_Castellated" H 3525 1900 50  0001 L CNN
+F 3 "~" H 3475 2100 50  0001 C CNN
+F 4 "F5632CT-ND" V 3385 2140 30  0001 C CNN "DigiKey-PN"
+F 5 "1812L110/24DR" V 3475 2100 50  0001 C CNN "MPN"
+F 6 "Littelfuse Inc." V 3475 2100 50  0001 C CNN "LittleFuse"
+	1    3475 2100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -574,8 +557,8 @@ $Comp
 L Device:R_Small R1
 U 1 1 5F8EC01A
 P 5000 2200
-F 0 "R1" V 4850 2200 50  0000 C CNN
-F 1 "1M" V 4920 2200 50  0000 C CNN
+F 0 "R1" V 4925 2200 50  0000 C CNN
+F 1 "1M" V 4850 2200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5000 2200 50  0001 C CNN
 F 3 "~" H 5000 2200 50  0001 C CNN
 F 4 "‎P20138CT-ND‎" V 5000 2200 50  0001 C CNN "DigiKey_PN"
@@ -644,9 +627,9 @@ Wire Wire Line
 Wire Wire Line
 	3300 2000 3300 2100
 Wire Wire Line
-	3300 2100 3350 2100
+	3300 2100 3375 2100
 Wire Wire Line
-	3550 2100 3650 2100
+	3575 2100 3650 2100
 $Comp
 L Device:Q_PMOS_GSD Q1
 U 1 1 5F6B889D
@@ -688,6 +671,7 @@ F 4 "Taiyo Yuden" H 4350 2550 50  0001 C CNN "Manufacturer"
 F 5 "JMK316B7106KL-T" H 4350 2550 50  0001 C CNN "MPN"
 F 6 "587-3007-1-ND" H 4350 2550 50  0001 C CNN "Digi-Key_PN"
 F 7 "Digi-Key" H 4350 2550 50  0001 C CNN "Vendor"
+F 8 "35V" H 4250 2350 50  0000 C CNN "Voltage"
 	1    4350 2550
 	1    0    0    -1  
 $EndComp
@@ -734,37 +718,8 @@ F 4 "Taiyo Yuden" H 7050 2550 50  0001 C CNN "Manufacturer"
 F 5 "JMK316B7106KL-T" H 7050 2550 50  0001 C CNN "MPN"
 F 6 "587-1346-1-ND" H 7050 2550 50  0001 C CNN "Digi-Key_PN"
 F 7 "Digi-Key" H 7050 2550 50  0001 C CNN "Vendor"
+F 8 "6.3V" H 6950 2350 50  0000 C CNN "Voltage"
 	1    7050 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C6
-U 1 1 5F96DAE5
-P 7350 2550
-F 0 "C6" H 7150 2550 50  0000 L CNN
-F 1 "10uF" H 7150 2450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7350 2550 50  0001 C CNN
-F 3 "~" H 7350 2550 50  0001 C CNN
-F 4 "Taiyo Yuden" H 7350 2550 50  0001 C CNN "Manufacturer"
-F 5 "JMK316B7106KL-T" H 7350 2550 50  0001 C CNN "MPN"
-F 6 "587-1346-1-ND" H 7350 2550 50  0001 C CNN "Digi-Key_PN"
-F 7 "Digi-Key" H 7350 2550 50  0001 C CNN "Vendor"
-	1    7350 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 5F96F936
-P 4650 2550
-F 0 "C3" H 4450 2550 50  0000 L CNN
-F 1 "10uF" H 4450 2450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4650 2550 50  0001 C CNN
-F 3 "~" H 4650 2550 50  0001 C CNN
-F 4 "Taiyo Yuden" H 4650 2550 50  0001 C CNN "Manufacturer"
-F 5 "JMK316B7106KL-T" H 4650 2550 50  0001 C CNN "MPN"
-F 6 "587-3007-1-ND" H 4650 2550 50  0001 C CNN "Digi-Key_PN"
-F 7 "Digi-Key" H 4650 2550 50  0001 C CNN "Vendor"
-	1    4650 2550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -772,7 +727,7 @@ L Device:D_Zener_Small D2
 U 1 1 5F9736F5
 P 4100 2300
 F 0 "D2" V 4100 2350 50  0000 L CNN
-F 1 "10V" H 4040 2220 50  0001 L CNN
+F 1 "10V" V 4200 2300 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-323" V 4100 2300 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/MM3Z2V4ST1-D.PDF" V 4100 2300 50  0001 C CNN
 F 4 "ON Semiconductor" H 4100 2300 50  0001 C CNN "Manufacturer"
@@ -883,7 +838,7 @@ F 1 "5.08mm" H 3440 5745 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3350 5650 50  0001 C CNN
 F 3 "~" H 3350 5650 50  0001 C CNN
 F 4 "1729128" H 3350 5650 50  0001 C CNN "MPN"
-F 5 "277-1247-ND " H 3420 5810 30  0000 C CNN "Digikey_PN"
+F 5 "277-1247-ND " H 3420 5810 30  0001 C CNN "Digikey_PN"
 F 6 "Phoenix Contact" H 3350 5650 50  0001 C CNN "Manufacturer"
 	1    3350 5650
 	-1   0    0    1   
@@ -918,6 +873,55 @@ Wire Wire Line
 	4200 3700 4250 3700
 Wire Wire Line
 	4200 4000 4200 4050
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5F59A739
+P 7600 3595
+F 0 "#PWR03" H 7600 3445 50  0001 C CNN
+F 1 "+3V3" H 7600 3730 50  0000 C CNN
+F 2 "" H 7600 3595 50  0001 C CNN
+F 3 "" H 7600 3595 50  0001 C CNN
+	1    7600 3595
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 4750 2    50   Input ~ 0
++5V
 Text GLabel 7750 2000 2    50   Input ~ 0
 +5.3V
+Text GLabel 3500 4750 2    50   Input ~ 0
++5V
+Text GLabel 7615 3900 2    50   Input ~ 0
++5V
+$Comp
+L Device:C_Small C?
+U 1 1 5F852525
+P 4650 2550
+F 0 "C?" H 4450 2550 50  0000 L CNN
+F 1 "10uF" H 4450 2450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4650 2550 50  0001 C CNN
+F 3 "~" H 4650 2550 50  0001 C CNN
+F 4 "Taiyo Yuden" H 4650 2550 50  0001 C CNN "Manufacturer"
+F 5 "JMK316B7106KL-T" H 4650 2550 50  0001 C CNN "MPN"
+F 6 "587-3007-1-ND" H 4650 2550 50  0001 C CNN "Digi-Key_PN"
+F 7 "Digi-Key" H 4650 2550 50  0001 C CNN "Vendor"
+F 8 "35V" H 4550 2350 50  0000 C CNN "Voltage"
+	1    4650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F853B4B
+P 7350 2550
+F 0 "C?" H 7150 2550 50  0000 L CNN
+F 1 "10uF" H 7150 2450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7350 2550 50  0001 C CNN
+F 3 "~" H 7350 2550 50  0001 C CNN
+F 4 "Taiyo Yuden" H 7350 2550 50  0001 C CNN "Manufacturer"
+F 5 "JMK316B7106KL-T" H 7350 2550 50  0001 C CNN "MPN"
+F 6 "587-1346-1-ND" H 7350 2550 50  0001 C CNN "Digi-Key_PN"
+F 7 "Digi-Key" H 7350 2550 50  0001 C CNN "Vendor"
+F 8 "6.3V" H 7250 2350 50  0000 C CNN "Voltage"
+	1    7350 2550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
