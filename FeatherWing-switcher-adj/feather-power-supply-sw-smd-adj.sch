@@ -24,8 +24,6 @@ F 3 "~" H 7250 4100 50  0001 C CNN
 	1    7250 4100
 	-1   0    0    -1  
 $EndComp
-Text GLabel 7615 3900 2    50   Input ~ 0
-+5V
 Wire Wire Line
 	7450 3900 7575 3900
 $Comp
@@ -276,17 +274,6 @@ F 3 "" H 3600 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3600 4850 3600 4950
-$Comp
-L power:+3V3 #PWR03
-U 1 1 5F59A739
-P 7600 3595
-F 0 "#PWR03" H 7600 3445 50  0001 C CNN
-F 1 "+3V3" H 7600 3730 50  0000 C CNN
-F 2 "" H 7600 3595 50  0001 C CNN
-F 3 "" H 7600 3595 50  0001 C CNN
-	1    7600 3595
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7450 3700 7600 3700
 Wire Wire Line
@@ -303,8 +290,6 @@ F 3 "~" H 7600 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 7600 3700
-Text GLabel 3500 4750 2    50   Input ~ 0
-+5V
 Text Notes 3090 4390 0    50   Italic 10
 CONNECTORS
 $Comp
@@ -331,8 +316,6 @@ F 3 "~" H 4100 4750 50  0001 C CNN
 	1    4100 4750
 	-1   0    0    1   
 $EndComp
-Text GLabel 4300 4750 2    50   Input ~ 0
-+5V
 $Comp
 L power:GND #PWR09
 U 1 1 5F6AA64A
@@ -918,6 +901,23 @@ Wire Wire Line
 	4200 3700 4250 3700
 Wire Wire Line
 	4200 4000 4200 4050
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5F59A739
+P 7600 3595
+F 0 "#PWR03" H 7600 3445 50  0001 C CNN
+F 1 "+3V3" H 7600 3730 50  0000 C CNN
+F 2 "" H 7600 3595 50  0001 C CNN
+F 3 "" H 7600 3595 50  0001 C CNN
+	1    7600 3595
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 4750 2    50   Input ~ 0
++5V
 Text GLabel 7750 2000 2    50   Input ~ 0
 +5.3V
+Text GLabel 3500 4750 2    50   Input ~ 0
++5V
+Text GLabel 7615 3900 2    50   Input ~ 0
++5V
 $EndSCHEMATC
