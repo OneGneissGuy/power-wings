@@ -924,4 +924,8 @@ F 8 "6.3V" H 7250 2350 50  0000 C CNN "Voltage"
 	1    7350 2550
 	1    0    0    -1  
 $EndComp
+Text Notes 3500 3900 0    30   Italic 0
+Cut JP1 to disable\nvoltage monitor on A1
+Text Notes 7625 2125 0    50   ~ 0
+5V OUT @ 1A
 $EndSCHEMATC
