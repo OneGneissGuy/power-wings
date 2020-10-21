@@ -15,7 +15,7 @@
 "J4, ","1","0.1""x4","Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)","","",""
 "J5, ","1","5.08mm","Conn_01x02","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal","Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)","","Phoenix Contact","1729128"
 "JP1, ","1","SolderJumper_2_Bridged","SolderJumper_2_Bridged","Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm","Solder Jumper, 2-pole, closed/bridged","","",""
-"L1, ","1","27uH","L_Small","FeatherWing-switcher-adj:SRR7045-220M","Inductor, small symbol","SRR7045-270MCT-ND","Bourns Inc.","SRR7045-270M"
+"L1, ","1","27uH","L_Small","FeatherWing-switcher-adj:ASPI-6045S-270","Inductor, small symbol","ASPI-6045S-270M-TCT-ND","Abracon LLC","ASPI-6045S-270M-T"
 "LOGO1, ","1","Logo_Open_Hardware_Small","Logo_Open_Hardware_Small","Symbol:OSHW-Symbol_6.7x6mm_SilkScreen","Open Hardware logo, small","","",""
 "Q1, ","1","Q_PMOS_GSD","Q_PMOS_GSD","Package_TO_SOT_SMD:SOT-23","P-MOSFET transistor, gate/source/drain","","","DMP3099L-7"
 "R1, R6, ","2","1M","R_Small","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","Resistor, small symbol","CR0603-FX-1004ELFCT-ND","Bourns Inc.","CR0603-FX-1004ELF"

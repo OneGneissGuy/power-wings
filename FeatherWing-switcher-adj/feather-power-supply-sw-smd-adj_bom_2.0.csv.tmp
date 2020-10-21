@@ -12,7 +12,7 @@ Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
 11,"Generic connector, single row, 01x12, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x12,J1,Conn_01x12,PinHeader_1x12_P2.54mm_Vertical,1,~,,,,,,,,,
 12,"Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x16,J2,Conn_01x16,PinHeader_1x16_P2.54mm_Vertical,1,~,,,,,,,,,
 13,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x04,J3,QWIIC,JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal,1,https://cdn-shop.adafruit.com/product-files/4328/4328_C13916-001_CCSH-W10-04-BK-RC-A.pdf,,,,,,,,,455-1804-1-ND
-14,"Inductor, small symbol",L_Small,L1,27uH,ASPI-6045S-270,1,,,Digi-Key,ASPI-6045S-270M-T,ASPI-6045S-270M-TCT-ND,Abracon LLC,,,,
+14,"Inductor, small symbol",L_Small,L1,27uH,SRR7045-220M,1,https://www.bourns.com/docs/Product-Datasheets/SRR7045.pdf,,Digi-Key,SRR7045-270M,SRR7045-270MCT-ND,Bourns Inc.,,,,
 15,"Open Hardware logo, small",Logo_Open_Hardware_Small,LOGO1,Logo_Open_Hardware_Small,OSHW-Symbol_6.7x6mm_SilkScreen,1,~,,,,,,,,,
 16,"P-MOSFET transistor, gate/source/drain",Q_PMOS_GSD,Q1,Q_PMOS_GSD,SOT-23,1,https://www.diodes.com/assets/Datasheets/DMP3099L.pdf,,,DMP3099L-7,,,,,DMP3099L-7DICT-ND,
 17,"Resistor, small symbol",R_Small,R2,330,R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,1,~,,Digi-Key,CR0603-FX-3300ELF,CR0603-FX-3300ELFTR-ND,Bourns Inc.,,,,
@@ -33,7 +33,7 @@ Number of PCBs:,1
 Total components:,26
 Schematic Version:,2.0
 Schematic Date:,2020-10-05
-PCB Variant:,[u'default']
-BoM Date:,Wed 21 Oct 2020 03:39:23 PM PDT
+PCB Variant:,default
+BoM Date:,Wed 21 Oct 2020 11:46:23 AM PDT
 Schematic Source:,feather-power-supply-sw-smd-adj.sch
 KiCad Version:,Eeschema 5.1.6-c6e7f7d~87~ubuntu18.04.1

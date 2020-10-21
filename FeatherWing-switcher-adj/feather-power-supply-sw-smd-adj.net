@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "/home/jf/CAD Drawings/Kicad/power-wings/FeatherWing-switcher-adj/feather-power-supply-sw-smd-adj.sch")
-    (date "Wed 21 Oct 2020 11:40:28 AM PDT")
+    (date "Wed 21 Oct 2020 03:22:39 PM PDT")
     (tool "Eeschema 5.1.6-c6e7f7d~87~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -31,12 +31,11 @@
       (tstamp 5F4FAA0A))
     (comp (ref L1)
       (value 27uH)
-      (footprint FeatherWing-switcher-adj:SRR7045-220M)
-      (datasheet https://www.bourns.com/docs/Product-Datasheets/SRR7045.pdf)
+      (footprint FeatherWing-switcher-adj:ASPI-6045S-270)
       (fields
-        (field (name Digi-Key_PN) SRR7045-270MCT-ND)
-        (field (name MPN) SRR7045-270M)
-        (field (name Manufacturer) "Bourns Inc.")
+        (field (name Digi-Key_PN) ASPI-6045S-270M-TCT-ND)
+        (field (name MPN) ASPI-6045S-270M-T)
+        (field (name Manufacturer) "Abracon LLC")
         (field (name Vendor) Digi-Key))
       (libsource (lib Device) (part L_Small) (description "Inductor, small symbol"))
       (sheetpath (names /) (tstamps /))
