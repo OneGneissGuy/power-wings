@@ -24,8 +24,6 @@ F 3 "~" H 7250 4100 50  0001 C CNN
 	1    7250 4100
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	7450 3900 7575 3900
 $Comp
 L power:GND #PWR05
 U 1 1 5F43D573
@@ -42,20 +40,6 @@ Wire Wire Line
 Wire Wire Line
 	6325 3900 6325 3970
 $Comp
-L power:PWR_FLAG #FLG03
-U 1 1 5F43E163
-P 7575 3900
-F 0 "#FLG03" H 7575 3975 50  0001 C CNN
-F 1 "PWR_FLAG" H 7425 4055 50  0000 C CNN
-F 2 "" H 7575 3900 50  0001 C CNN
-F 3 "~" H 7575 3900 50  0001 C CNN
-	1    7575 3900
-	-1   0    0    1   
-$EndComp
-Connection ~ 7575 3900
-Wire Wire Line
-	7575 3900 7615 3900
-$Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5F43E24F
 P 6325 3900
@@ -67,7 +51,7 @@ F 3 "~" H 6325 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6325 3900
-NoConn ~ 7450 3800
+NoConn ~ 7450 3900
 NoConn ~ 7450 4000
 NoConn ~ 7450 4100
 NoConn ~ 7450 4200
@@ -278,7 +262,7 @@ F 1 "PWR_FLAG" H 7365 3780 50  0000 C CNN
 F 2 "" H 7600 3700 50  0001 C CNN
 F 3 "~" H 7600 3700 50  0001 C CNN
 	1    7600 3700
-	-1   0    0    1   
+	0    1    1    0   
 $EndComp
 Connection ~ 7600 3700
 Text Notes 3090 4390 0    50   Italic 10
@@ -882,7 +866,7 @@ Text GLabel 7750 2000 2    50   Input ~ 0
 +5.3V
 Text GLabel 3500 4750 2    50   Input ~ 0
 +5V
-Text GLabel 7615 3900 2    50   Input ~ 0
+Text GLabel 7625 3800 2    50   Input ~ 0
 +5V
 Text Notes 3500 3900 0    30   Italic 0
 Cut JP1 to disable\nvoltage monitor on A1
@@ -950,4 +934,20 @@ F 7 "Digi-Key" H 3850 2700 50  0001 C CNN "Vendor"
 	1    3850 2700
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5F43E163
+P 7550 3800
+F 0 "#FLG03" H 7550 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 7400 3955 50  0000 C CNN
+F 2 "" H 7550 3800 50  0001 C CNN
+F 3 "~" H 7550 3800 50  0001 C CNN
+	1    7550 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7450 3800 7550 3800
+Connection ~ 7550 3800
+Wire Wire Line
+	7550 3800 7625 3800
 $EndSCHEMATC
