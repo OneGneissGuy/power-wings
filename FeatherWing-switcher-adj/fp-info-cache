@@ -1,36 +1,43 @@
-8006688359374
-FeatherWing-switcher-adj
-ASPI-6045S-270
-
-
+9583935656656
+My libs
+L_Bourns-SRN3012
+Bourns SRN1060 series SMD inductor https://www.bourns.com/docs/Product-Datasheets/SRN1060.pdf
+Bourns SRN1060 SMD inductor
 0
 2
 2
-FeatherWing-switcher-adj
-PinHeader_1x01_P2.54mm_Vertical
-Through hole straight pin header, 1x01, 2.54mm pitch, single row
-Through hole pin header THT 1x01 2.54mm single row
-0
-1
-1
-FeatherWing-switcher-adj
-Prototype_P2.54mm_Vertical
-Through hole straight pin header, 1x01, 2.54mm pitch, single row
-Through hole pin header THT 1x01 2.54mm single row
-0
-20
-20
-FeatherWing-switcher-adj
-SRR7045-220M
+My libs
+QFN65P500X500X100-21N
 
 
+0
+30
+30
+My libs
+TDK-VLS3012HBX
+Bourns SRN1060 series SMD inductor https://www.bourns.com/docs/Product-Datasheets/SRN1060.pdf
+Bourns SRN1060 SMD inductor
 0
 2
 2
-FeatherWing-switcher-adj
-proto
+My libs
+TDK-VLS4012HBX
+Bourns SRN1060 series SMD inductor https://www.bourns.com/docs/Product-Datasheets/SRN1060.pdf
+Bourns SRN1060 SMD inductor
+0
+2
+2
+My libs
+ki-logo-sym
 
 
 0
 0
 0
+My libs
+sw-spdt-DIYhz
+
+
+0
+3
+3
