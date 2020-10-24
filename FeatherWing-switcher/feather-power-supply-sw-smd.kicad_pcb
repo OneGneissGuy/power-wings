@@ -1396,7 +1396,7 @@
   (gr_text "STEMMA QT" (at 139.7 102.87) (layer F.SilkS) (tstamp 5F614F9F)
     (effects (font (size 0.762 0.762) (thickness 0.125)))
   )
-  (gr_text "FeatherWing\nSwitcher v2.1\n" (at 137.033 92.964) (layer F.SilkS) (tstamp 5F614F9C)
+  (gr_text "FeatherWing\nSwitcher v2.0\n" (at 137.033 92.964) (layer F.SilkS) (tstamp 5F614F9C)
     (effects (font (size 1 1) (thickness 0.15) italic))
   )
   (gr_text "Anapos Sensing\nand Design\n" (at 139.4714 106.68) (layer B.Mask) (tstamp 5F614F99)
