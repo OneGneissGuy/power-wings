@@ -35,10 +35,8 @@ F 3 "" H 5740 3000 50  0001 C CNN
 	1    5740 3000
 	1    0    0    -1  
 $EndComp
-Text GLabel 7615 3900 2    50   Input ~ 0
+Text GLabel 7700 3800 2    50   Input ~ 0
 +5V
-Wire Wire Line
-	7450 3900 7575 3900
 $Comp
 L power:GND #PWR04
 U 1 1 5F43D573
@@ -57,17 +55,14 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG04
 U 1 1 5F43E163
-P 7575 3900
-F 0 "#FLG04" H 7575 3975 50  0001 C CNN
-F 1 "PWR_FLAG" H 7425 4055 50  0000 C CNN
-F 2 "" H 7575 3900 50  0001 C CNN
-F 3 "~" H 7575 3900 50  0001 C CNN
-	1    7575 3900
+P 7650 3800
+F 0 "#FLG04" H 7650 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 7500 3955 50  0000 C CNN
+F 2 "" H 7650 3800 50  0001 C CNN
+F 3 "~" H 7650 3800 50  0001 C CNN
+	1    7650 3800
 	-1   0    0    1   
 $EndComp
-Connection ~ 7575 3900
-Wire Wire Line
-	7575 3900 7615 3900
 $Comp
 L power:PWR_FLAG #FLG03
 U 1 1 5F43E24F
@@ -80,7 +75,6 @@ F 3 "~" H 6325 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6325 3900
-NoConn ~ 7450 3800
 NoConn ~ 7450 4000
 NoConn ~ 7450 4100
 NoConn ~ 7450 4200
@@ -497,11 +491,11 @@ L power:PWR_FLAG #FLG02
 U 1 1 5F5B29C7
 P 7600 3700
 F 0 "#FLG02" H 7600 3775 50  0001 C CNN
-F 1 "PWR_FLAG" H 7365 3780 50  0000 C CNN
+F 1 "PWR_FLAG" V 7600 4050 50  0000 C CNN
 F 2 "" H 7600 3700 50  0001 C CNN
 F 3 "~" H 7600 3700 50  0001 C CNN
 	1    7600 3700
-	-1   0    0    1   
+	0    1    1    0   
 $EndComp
 Connection ~ 7600 3700
 Text GLabel 3500 4750 2    50   Input ~ 0
@@ -830,4 +824,10 @@ F 6 "Phoenix Contact" H 3370 5650 50  0001 C CNN "Manufacturer"
 $EndComp
 Wire Wire Line
 	7620 2170 7890 2170
+Wire Wire Line
+	7450 3800 7650 3800
+Connection ~ 7650 3800
+Wire Wire Line
+	7650 3800 7700 3800
+NoConn ~ 7450 3900
 $EndSCHEMATC
