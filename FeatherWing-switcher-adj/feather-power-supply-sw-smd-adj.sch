@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Feather Switcher"
-Date "2020-10-05"
-Rev "2.0"
+Date "2020-10-24"
+Rev "1.1"
 Comp ""
 Comment1 "Adafruit FeatherWing compatible 5V switching power supply"
 Comment2 "All capacitors are 0603 X7R class unless noted. C2,C3,C5,C6 are 1206, low esr"

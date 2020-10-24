@@ -258,7 +258,7 @@ L power:PWR_FLAG #FLG01
 U 1 1 5F5B29C7
 P 7600 3700
 F 0 "#FLG01" H 7600 3775 50  0001 C CNN
-F 1 "PWR_FLAG" H 7365 3780 50  0000 C CNN
+F 1 "PWR_FLAG" V 7600 4010 50  0000 C CNN
 F 2 "" H 7600 3700 50  0001 C CNN
 F 3 "~" H 7600 3700 50  0001 C CNN
 	1    7600 3700
@@ -416,16 +416,16 @@ Text GLabel 7750 2200 2    50   Input ~ 0
 $Comp
 L Device:R_Small R2
 U 1 1 5F673EBF
-P 7700 2400
-F 0 "R2" H 7750 2430 50  0000 L CNN
-F 1 "330" H 7750 2360 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7700 2400 50  0001 C CNN
-F 3 "~" H 7700 2400 50  0001 C CNN
-F 4 "Bourns Inc." H 7700 2400 50  0001 C CNN "Manufacturer"
-F 5 "CR0603-FX-3300ELF" H 7700 2400 50  0001 C CNN "MPN"
-F 6 "CR0603-FX-3300ELFTR-ND" H 7700 2400 50  0001 C CNN "Digi-Key_PN"
-F 7 "Digi-Key" H 7700 2400 50  0001 C CNN "Vendor"
-	1    7700 2400
+P 7700 2600
+F 0 "R2" H 7750 2630 50  0000 L CNN
+F 1 "330" H 7750 2560 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7700 2600 50  0001 C CNN
+F 3 "~" H 7700 2600 50  0001 C CNN
+F 4 "Bourns Inc." H 7700 2600 50  0001 C CNN "Manufacturer"
+F 5 "CR0603-FX-3300ELF" H 7700 2600 50  0001 C CNN "MPN"
+F 6 "CR0603-FX-3300ELFTR-ND" H 7700 2600 50  0001 C CNN "Digi-Key_PN"
+F 7 "Digi-Key" H 7700 2600 50  0001 C CNN "Vendor"
+	1    7700 2600
 	1    0    0    -1  
 $EndComp
 Text GLabel 7450 4600 2    50   Input ~ 0
@@ -497,16 +497,16 @@ $EndComp
 $Comp
 L Device:LED_Small D3
 U 1 1 5F672EB4
-P 7700 2650
-F 0 "D3" V 7750 2580 50  0000 R CNN
-F 1 "5V_OK" V 7660 2590 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" V 7700 2650 50  0001 C CNN
-F 3 "https://vcclite.com/wp-content/uploads/wpallimport/files/files/CMD1721Seriesver3.pdf" V 7700 2650 50  0001 C CNN
-F 4 "Visual Communications Company - VCC" H 7700 2650 50  0001 C CNN "Manufacturer"
-F 5 "CMD17-21VGD/TR8" H 7700 2650 50  0001 C CNN "MPN"
-F 6 "L62505CT-ND" H 7700 2650 50  0001 C CNN "Digi-Key_PN"
-F 7 "Digi-Key" H 7700 2650 50  0001 C CNN "Vendor"
-	1    7700 2650
+P 7700 2800
+F 0 "D3" V 7750 2730 50  0000 R CNN
+F 1 "5V_OK" V 7660 2740 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" V 7700 2800 50  0001 C CNN
+F 3 "https://vcclite.com/wp-content/uploads/wpallimport/files/files/CMD1721Seriesver3.pdf" V 7700 2800 50  0001 C CNN
+F 4 "Visual Communications Company - VCC" H 7700 2800 50  0001 C CNN "Manufacturer"
+F 5 "CMD17-21VGD/TR8" H 7700 2800 50  0001 C CNN "MPN"
+F 6 "L62505CT-ND" H 7700 2800 50  0001 C CNN "Digi-Key_PN"
+F 7 "Digi-Key" H 7700 2800 50  0001 C CNN "Vendor"
+	1    7700 2800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -516,10 +516,6 @@ Wire Wire Line
 Wire Wire Line
 	7450 2200 7400 2200
 Connection ~ 7350 2200
-Wire Wire Line
-	7700 2300 7700 2200
-Wire Wire Line
-	7700 2200 7750 2200
 Wire Wire Line
 	7050 2200 7050 2450
 Connection ~ 7050 2200
@@ -574,8 +570,6 @@ Wire Wire Line
 Wire Wire Line
 	6650 2900 5700 2900
 Connection ~ 5700 2900
-Wire Wire Line
-	7700 2750 7700 2900
 Connection ~ 6650 2900
 Wire Wire Line
 	7050 2650 7050 2900
@@ -656,8 +650,6 @@ Wire Wire Line
 Connection ~ 4400 2100
 Wire Wire Line
 	4400 2100 4500 2100
-Wire Wire Line
-	7700 2500 7700 2550
 $Comp
 L Device:R_Small R3
 U 1 1 5F4EB99E
@@ -721,16 +713,10 @@ Connection ~ 4000 2500
 Wire Wire Line
 	4000 2800 4000 2900
 Wire Wire Line
-	7350 2900 7700 2900
-Connection ~ 7350 2900
-Wire Wire Line
-	7650 2200 7700 2200
-Connection ~ 7700 2200
-Wire Wire Line
 	6000 1900 6100 1900
 Wire Wire Line
 	6300 1900 6350 1900
-Text Notes 7750 2900 0    30   ~ 0
+Text Notes 7740 3040 0    30   ~ 0
 Vf=2.1V\nIf=(5-2.1V)/330\nIf= 8.9mA
 $Comp
 L mcp16311ms:MCP16312MS U1
@@ -958,4 +944,25 @@ $EndComp
 Wire Wire Line
 	3170 2200 3200 2200
 NoConn ~ 3600 2300
+Wire Wire Line
+	7650 2200 7700 2200
+$Comp
+L Jumper:SolderJumper_2_Bridged JP2
+U 1 1 5FA4052D
+P 7700 2350
+F 0 "JP2" V 7700 2500 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 7365 2260 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7700 2350 50  0001 C CNN
+F 3 "~" H 7700 2350 50  0001 C CNN
+	1    7700 2350
+	0    1    1    0   
+$EndComp
+Connection ~ 7700 2200
+Wire Wire Line
+	7700 2200 7750 2200
+Wire Wire Line
+	7350 2900 7700 2900
+Connection ~ 7350 2900
+Text Notes 7810 2500 0    30   Italic 0
+Cut JP2 to\ndisable 5V LED
 $EndSCHEMATC
