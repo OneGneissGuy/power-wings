@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Feather Switcher"
-Date "2020-10-05"
-Rev "2.0"
+Date "2020-10-25"
+Rev "2.1"
 Comp ""
 Comment1 "Adafruit FeatherWing compatible 5V switching power supply"
 Comment2 "All capacitors are 0603 X7R class unless noted. C2,C5,C6 are 1206, low esr"
@@ -109,8 +109,8 @@ $Comp
 L Device:R_Small R1
 U 1 1 5F4EB99E
 P 6310 2470
-F 0 "R1" V 6114 2470 50  0000 C CNN
-F 1 "10K" V 6205 2470 50  0000 C CNN
+F 0 "R1" V 6370 2470 50  0000 C CNN
+F 1 "10K" V 6450 2470 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6310 2470 50  0001 C CNN
 F 3 "~" H 6310 2470 50  0001 C CNN
 F 4 "‎P20138CT-ND‎" V 6310 2470 50  0001 C CNN "DigiKey_PN"
@@ -158,8 +158,6 @@ Wire Wire Line
 Wire Wire Line
 	6090 2170 6000 2170
 Wire Wire Line
-	6090 2170 6160 2170
-Wire Wire Line
 	6880 2170 6880 2390
 Connection ~ 6090 2170
 Wire Wire Line
@@ -202,8 +200,6 @@ Wire Wire Line
 Connection ~ 4990 2910
 Wire Wire Line
 	6000 2620 6160 2620
-Wire Wire Line
-	6160 2620 6160 2170
 Connection ~ 4330 2910
 Wire Wire Line
 	4330 2320 4330 2450
@@ -583,10 +579,7 @@ Wire Notes Line
 	8210 5300 5910 5300
 Wire Notes Line
 	5910 3400 5910 5300
-Wire Wire Line
-	6880 2170 6160 2170
 Connection ~ 6880 2170
-Connection ~ 6160 2170
 Wire Wire Line
 	6880 2910 6580 2910
 Connection ~ 6880 2910
@@ -830,4 +823,8 @@ Connection ~ 7650 3800
 Wire Wire Line
 	7650 3800 7700 3800
 NoConn ~ 7450 3900
+Wire Wire Line
+	6090 2170 6880 2170
+Text GLabel 6160 2620 2    50   Input ~ 0
++5V
 $EndSCHEMATC
